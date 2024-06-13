@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         .title {
-            @apply text-[3.125rem] leading-[1.1] font-bold tracking-wide whitespace-pre;
+            @apply text-[3.125rem] leading-[1.1] font-bold tracking-wide;
         }
         .subtitle {
-            @apply text-[1.625rem] font-light font-normal;
+            @apply text-[1.625rem] font-light;
         }
 
         .red-btn {
@@ -38,7 +38,7 @@
 
         <!-- Main-Text -->
         <div class="relative z-10 flex flex-col text-center px-5 justify-center items-center w-[85%] max-w-[800px] text-white h-full mx-auto gap-3">
-            <h1 class="title">Unlimited movies, TV shows, and more</h1>
+            <h1 class="title whitespace-pre">Unlimited movies, TV shows, and more</h1>
             <p class="subtitle py-[12px]">Watch anywhere. Cancel anytime.</p>
             <p class="text-[1.3rem] font-normal">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="flex w-full justify-center gap-2">
@@ -66,14 +66,41 @@
 
             <div class="relative w-[48%]">
                 <img class="w-full h-full" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
-                <video class="absolute top-[48%] max-h-[54%] max-w-[73%] left-[50%] -translate-x-1/2 -translate-y-1/2" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+                <video class="absolute top-[48%] max-h-[54%] max-w-[73%] left-[49.5%] -translate-x-1/2 -translate-y-1/2" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
             </div>
         </div>
     </div>
 
     <!-- Section-02 -->
     <div class="grayborder">
+        <div class="flex text-white justify-between max-w-[1155px] mx-auto items-center mt-[60px] mb-[65px]">
 
+            <div class="relative w-[48%]">
+                <img class="w-full h-full" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+
+                <div class="flex w-[60%] items-center justify-between border-[#ffffff40] border-2 rounded-[10px] gap-3 py-[0.5rem] px-[0.75rem] absolute bottom-[6%] left-[20%] bg-black"> 
+                    <!-- -translate-x-1/2 -->
+                    <div>
+                        <img class="h-[5.2rem]" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png" alt="">
+                    </div>
+                    <div c  lass="text-left">
+                        <div class="text-base">Stanger Things</div>
+                        <div class="text-base text-[#0071EB]">Downloading...</div>
+                    </div>
+                    <div>
+                        <img class="w-[3rem] h-[3rem]" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-[52%]">
+                <h1 class="title w-1000% pb-3 ">Download your shows to watch offline</h1>
+                <p class="subtitle">Save your favorites easily and always have something to watch.
+                </p>
+            </div>
+            
+            
+        </div>
     </div>
     
     
