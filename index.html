@@ -14,10 +14,19 @@
         }
 
         .red-btn {
-            @apply flex bg-[#E50914] py-[6px] px-[26px] items-center rounded-[5px] text-[1.625rem] font-medium hover:bg-[#e50914ae];
+            @apply flex bg-[#E50914] py-[6px] px-[24px] items-center rounded-[5px] text-[1.625rem] font-normal hover:bg-[#e50914ae];
         }
         .grayborder{
             @apply border-t-[8px] border-[#222];
+        }
+        .list-item-icon{
+            @apply h-8 w-8 fill-current;
+        }
+        .list-item-title{
+            @apply tracking-wide text-[1.525rem];
+        }
+        .list-item{
+            @apply flex w-full justify-between items-center bg-[#2D2D2D] px-7 py-5 my-3 rounded-[2px];
         }
         
     </style>
@@ -133,6 +142,53 @@
                 <p class="subtitle">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
                 </p>
             </div>
+        </div>
+    </div>
+
+    <!-- FAQS -->
+    <div class="grayborder">
+        <div class="text-white max-w-[1200px] mx-auto py-[70px]">
+            <h1 class="title w-full text-center mb-8">Frequently Asked Questions</h1>
+            <ul class="w-[95%] mx-auto">
+                <li class="list-item">
+                    <div class="list-item-title">What is Netflix?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-title">How much does Netflix cost?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-title">Where can I watch?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-title">How do I cancel?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-title">What can I watch on Netflix?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+                <li class="list-item">
+                    <div class="list-item-title">Is Netflix good for kids?</div>
+                    <svg class="list-item-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36" role="img" data-icon="PlusLarge" aria-hidden="true" class=""><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                </li>
+            </ul>
+            <div>
+                <p class="text-[1.3rem] font-normal text-center mt-[40px] mb-[20px]">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="flex w-[60%] mx-auto justify-center gap-2">
+                    <input type="text" placeholder="Email Address" class="w-[400px] px-[15px] py-4 bg- placeholder:text-sm bg-[#0F0F0F] bg-opacity-60 rounded-[5px] border-[#ffffff40] border-2">
+                    <button class="red-btn">
+                        <span class="pr-2">Get Started</span>
+                        <svg class="text-[] w-4 h-4 text-white fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" data-icon="ChevronRightStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            
     
 </body>
 </html>
