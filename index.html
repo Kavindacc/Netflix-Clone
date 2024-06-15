@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
         .title {
-            @apply text-[3.125rem] leading-[1.1] font-bold tracking-wide;
+            @apply text-[1.75rem] md:text-[3.125rem] leading-[1.1] font-bold tracking-wide;
         }
         .subtitle {
-            @apply text-[1.625rem] font-light;
+            @apply text-[1.125rem] md:text-[1.625rem] font-light;
         }
 
         .red-btn {
@@ -28,6 +28,12 @@
         .list-item{
             @apply flex w-full justify-between items-center bg-[#2D2D2D] px-7 py-5 my-3 rounded-[2px];
         }
+        .footer-item{
+            @apply py-[10px] underline cursor-pointer ;
+        }
+        .footer-col{
+            @apply gap-10;
+        }
         
     </style>
 </head>
@@ -39,15 +45,15 @@
         <div class="absolute left-0 top-0 bottom-0 right-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90"></div>
 
         <!-- Navbar -->
-        <div class="flex justify-between w-full items-center px-[160px] pt-[28px] z-10 relative">
-            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-[#E50914] fill-current h-[36px]"><g><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path></g></svg>
-            <a href="#" class="bg-[#E50914] px-[17px] py-[7px] rounded-[4px] text-white font-medium text-[0.9rem]">Sign In</a>
+        <div class="flex justify-between w-full items-center px-[58px] pt-[28px] z-10 relative">
+            <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="text-[#E50914] fill-current h-[24px] md:h-[36px]"><g><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path></g></svg>
+            <a href="#" class="bg-[#E50914]  md:px-[17px] md:py-[7px] rounded-[4px] text-white font-medium text-[0.9rem]">Sign In</a>
 
         </div>
 
         <!-- Main-Text -->
-        <div class="relative z-10 flex flex-col text-center px-5 justify-center items-center w-[85%] max-w-[800px] text-white h-full mx-auto gap-3">
-            <h1 class="title whitespace-pre">Unlimited movies, TV shows, and more</h1>
+        <div class="relative z-10 flex flex-col text-center px-5 justify-center items-center w-[90%] max-w-[1000px] text-white h-full mx-auto gap-3">
+            <h1 class="title">Unlimited movies, TV shows, and more</h1>
             <p class="subtitle py-[12px]">Watch anywhere. Cancel anytime.</p>
             <p class="text-[1.3rem] font-normal">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="flex w-full justify-center gap-2">
@@ -103,7 +109,7 @@
                 
             </div>
             <div class="w-[52%]">
-                <h1 class="title w-1000% pb-3 ">Download your shows to watch offline</h1>
+                <h1 class="title pb-3 ">Download your shows to watch offline</h1>
                 <p class="subtitle">Save your favorites easily and always have something to watch.
                 </p>
             </div>
@@ -134,7 +140,8 @@
         <div class="flex text-white justify-between max-w-[1155px] mx-auto items-center mt-[60px] mb-[65px]">
 
             <div class="relative w-[48%]">
-                <img class="w-full h-full" src="https://occ-0-8177-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" alt="">
+                <img class="w-full h-full" src="https://occ-0-4249-58.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png?r=f55" alt="">
+                
                 
             </div>
             <div class="w-[50%]">
@@ -188,6 +195,46 @@
         </div>
     </div>
 
+    <footer class="grayborder">
+        <div class="max-w-[1200px] text-[#B3B3B3] py-[70px] px-[43px] w-[80%] mx-auto ">
+            <h2 class="pb-5">Questions? Contact us.</h2>
+            <div class="grid grid-cols-4 text-[15px]">
+                <div class="footer-col">
+                    <div class="footer-item" href="#">FAQ</div>
+                    <div class="footer-item" href="#">Investor Relations</div>
+                    <div class="footer-item" href="#">Privacy</div>
+                    <div class="footer-item" href="#">Speed Test</div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-item" href="#">Help Center</div>
+                    <div class="footer-item" href="#">Jobs</div>
+                    <div class="footer-item" href="#">Cookie Preferences</div>
+                    <div class="footer-item" href="#">Legal Notices</div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-item" href="#">Account</div>
+                    <div class="footer-item" href="#">Ways to Watch</div>
+                    <div class="footer-item" href="#">Corporate Information</div>
+                    <div class="footer-item" href="#">Only on Netflix</div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-item" href="#">Media Center</div>
+                    <div class="footer-item" href="#">Terms of Use</div>
+                    <div class="footer-item" href="#">Contact Us</div>
+                    <div class="footer-item" href="#"></div>
+                </div>
+            </div>
+            <select class="bg-black" name="language" id="">
+                <option value="english justify-between px-3">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.913 17H20.087M12.913 17L11 21M12.913 17L15.7783 11.009C16.0092 10.5263 16.1246 10.2849 16.2826 10.2086C16.4199 10.1423 16.5801 10.1423 16.7174 10.2086C16.8754 10.2849 16.9908 10.5263 17.2217 11.009L20.087 17M20.087 17L22 21M2 5H8M8 5H11.5M8 5V3M11.5 5H14M11.5 5C11.0039 7.95729 9.85259 10.6362 8.16555 12.8844M10 14C9.38747 13.7248 8.76265 13.3421 8.16555 12.8844M8.16555 12.8844C6.81302 11.8478 5.60276 10.4266 5 9M8.16555 12.8844C6.56086 15.0229 4.47143 16.7718 2 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    <span class="px-6 text-[30px]">English</span>
+                </option>
+            </select>
+            <h2 class="pt-5">Netflix Sri Lanka</h2>
+        </div>
+    </footer>
             
     
 </body>
